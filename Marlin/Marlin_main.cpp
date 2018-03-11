@@ -3545,6 +3545,12 @@ case 404:  //M404 Enter the nominal filament width (3mm, 1.75mm ) N<3.0> or disp
           SERIAL_ECHO_START;
           SERIAL_ECHO("Bigger -Z => smaller gap");
           SERIAL_PROTOCOLLN("");
+          SERIAL_ECHO_START;
+          SERIAL_ECHO("e.g. M851 Z-1.7");
+          SERIAL_PROTOCOLLN("");
+          SERIAL_ECHO_START;
+          SERIAL_ECHO("M500");
+          SERIAL_PROTOCOLLN("");
         }
       }
       else if(code_seen('G'))
